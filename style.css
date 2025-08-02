@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(212, 212, 204);;
+}
+
+/* Header */
+header {
+  background: #181a1b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e6494f;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/raju-gym.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.join-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 150px;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.join-button:hover {
+  background-color: rgb(207, 139, 2);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 50px 0 30px;
+  color: #222;
+}
+
+/* Trainers Section */
+.trainers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.trainer-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.trainer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.trainer-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.trainer-card p {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 6px;
+  color: #ff5a5f;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+
+/* About Us Section */
+.training-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.story {
+  font-weight: bold;
+}
+
+.training-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; 
+  
+}
+
+.training-description,
+.training-services {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.training-description h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.training-description p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.training-services h3 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.training-services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+.training-services li {
+  margin-bottom: 10px;
+}
+
+/* Stats Section */
+.stats {
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+  padding: 64px 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat h1 {
+  color: rgb(255, 65, 65);
+  font-size: 60px;
+}
+
+.stat p {
+  font-size: 20px;
+  margin: 50px 150px;
+}
+
+/* Subscription Section */
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+.subscription-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff5a5f;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff5a5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6494f;
+}
+
